@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Visites</title>
+   </head>
+<body>
+
+   <header>
+      <img src="profile.jpg" alt="Paula">
+      <span>SECURIT</span>
+      <a href="#" class="back">&#8630;</a>
+   </header>
+
+   <div class="container">
+      <h1>Visites</h1>
+      <div class="search-bar">
+         <input type="text" placeholder="Rechercher...">
+         <button>+</button>
+      </div>
+
+      <table>
+         <thead>
+            <tr>
+               <th>date</th>
+               <th>entreprise</th>
+               <th></th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td>27/11/2024</td>
+               <td>EC1</td>
+               <td class="arrow"><a href="#">&#10132;</a></td>
+            </tr>
+         </tbody>
+      </table>
+   </div>
+
+   <footer>
+      <a href="#" class="active">Visites</a>
+      <a href="#">Entreprises</a>
+      <a href="#">Réglages</a>
+   </footer>
+
+</body>
+</html>
+
+<style>
+   body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #f9f9f9;
+   }
+
+   header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 10px 20px;
+      background-color: white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   }
+
+   header img {
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+   }
+
+   header span {
+      font-size: 18px;
+      font-weight: bold;
+   }
+
+   header .back {
+      font-size: 24px;
+      text-decoration: none;
+      color: black;
+   }
+
+   .container {
+      width: 90%;
+      max-width: 600px;
+      margin: 20px 0;
+   }
+
+   .search-bar {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+   }
+
+   .search-bar input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+   }
+
+   .search-bar button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      margin-left: 10px;
+      cursor: pointer;
+   }
+
+   table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   }
+
+   th, td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #ccc;
+   }
+
+   th {
+      background-color: #f1f1f1;
+      font-weight: bold;
+   }
+
+   .arrow {
+      text-align: center;
+   }
+
+   .arrow a {
+      text-decoration: none;
+      font-size: 18px;
+      color: #007bff;
+   }
+
+   footer {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      padding: 10px 0;
+      background-color: white;
+      position: fixed;
+      bottom: 0;
+      border-top: 1px solid #ccc;
+   }
+
+   footer a {
+      text-decoration: none;
+      color: gray;
+      font-size: 16px;
+      text-align: center;
+   }
+
+   footer a.active {
+      color: #007bff;
+   }
+</style>

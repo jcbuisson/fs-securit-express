@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Login</title>
+   <link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body>
+   <div class="login-container">
+      <div>
+         <img src="assets/images/logo.png" />
+      </div>
+      <h2>Connexion</h2>
+      <form action="/check_credentials" method="POST">
+         <div class="form-group mb-2">
+            <label for="email">Email</label>
+            <div class="input-container">
+               <span class="icon">@</span>
+               <input type="email" id="email" name="email" placeholder="Ex: abc@example.com" required>
+            </div>
+         </div>
+         <div class="form-group mb-2">
+            <label for="password">Mot de passe</label>
+            <div class="input-container">
+               <span class="icon">🔒</span>
+               <input type="password" id="password" name="password" placeholder="********" required>
+            </div>
+         </div>
+
+         <p class="error"><%= errorMessage %></p>
+
+         <div class="mb-2">
+            <button type="submit" class="large-button">Connexion</button>
+         </div>
+         <div>
+            <a href="/register">Créer un compte</a>
+         </div>
+      </form>
+   </div>
+</body>
+</html>

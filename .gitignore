@@ -1,0 +1,6 @@
+node_modules/
+.env
+.vscode
+package-lock.json
+prisma/dev.db
+ecosystem.config.cjs
